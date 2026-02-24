@@ -16,7 +16,7 @@ export const Product = () => {
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
       
       <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
-        <img src="/public/Cart.png" className="mx-auto mb-6" />
+        <img src="/Cart.png" className="mx-auto mb-6" />
         <h3 className="text-lg font-medium mb-2">Gear set</h3>
         <div className="flex items-center gap-3">
           <span className="text-red-500 font-semibold">$100</span>
@@ -28,7 +28,7 @@ export const Product = () => {
       </div>
 
       <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
-        <img src="/public/Cart.png" className="mx-auto mb-6" />
+        <img src="/Cart.png" className="mx-auto mb-6" />
         <h3 className="text-lg font-medium mb-2">Ducati hoodie</h3>
         <div className="flex items-center gap-3">
           <span className="text-red-500 font-semibold">$360</span>
@@ -41,7 +41,7 @@ export const Product = () => {
 
      
       <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
-        <img src="/public/Cart.png" className="mx-auto mb-6" />
+        <img src="/Cart.png" className="mx-auto mb-6" />
         <h3 className="text-lg font-medium mb-2">ASUS FHD Gaming Laptop</h3>
         <div className="flex items-center gap-3">
           <span className="text-red-500 font-semibold">$700</span>
@@ -54,7 +54,7 @@ export const Product = () => {
 
       
       <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
-        <img src="/public/Cart.png" className="mx-auto mb-6" />
+        <img src="/Cart.png" className="mx-auto mb-6" />
         <h3 className="text-lg font-medium mb-2">Rossi Tires Product Set</h3>
         <div className="flex items-center gap-3">
           <span className="text-red-500 font-semibold">$500</span>
@@ -65,7 +65,7 @@ export const Product = () => {
         </div>
       </div>
       <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
-        <img src="/public/Cart.png" className="mx-auto mb-6" />
+        <img src="/Cart.png" className="mx-auto mb-6" />
         <h3 className="text-lg font-medium mb-2">Rossi Tires Product Set</h3>
         <div className="flex items-center gap-3">
           <span className="text-red-500 font-semibold">$500</span>
@@ -76,7 +76,7 @@ export const Product = () => {
         </div>
       </div>
       <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
-        <img src="/public/Cart.png" className="mx-auto mb-6" />
+        <img src="/Cart.png" className="mx-auto mb-6" />
         <h3 className="text-lg font-medium mb-2">Rossi Tires Product Set</h3>
         <div className="flex items-center gap-3">
           <span className="text-red-500 font-semibold">$500</span>
@@ -87,7 +87,7 @@ export const Product = () => {
         </div>
       </div>
       <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
-        <img src="/public/Cart.png" className="mx-auto mb-6" />
+        <img src="/Cart.png" className="mx-auto mb-6" />
         <h3 className="text-lg font-medium mb-2">Rossi Tires Product Set</h3>
         <div className="flex items-center gap-3">
           <span className="text-red-500 font-semibold">$500</span>
@@ -98,7 +98,7 @@ export const Product = () => {
         </div>
       </div>
       <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
-        <img src="/public/Cart.png" className="mx-auto mb-6" />
+        <img src="/Cart.png" className="mx-auto mb-6" />
         <h3 className="text-lg font-medium mb-2">Rossi Tires Product Set</h3>
         <div className="flex items-center gap-3">
           <span className="text-red-500 font-semibold">$500</span>
@@ -109,7 +109,7 @@ export const Product = () => {
         </div>
       </div>
       <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
-        <img src="/public/Cart.png" className="mx-auto mb-6" />
+        <img src="/Cart.png" className="mx-auto mb-6" />
         <h3 className="text-lg font-medium mb-2">Rossi Tires Product Set</h3>
         <div className="flex items-center gap-3">
           <span className="text-red-500 font-semibold">$500</span>
@@ -120,7 +120,7 @@ export const Product = () => {
         </div>
       </div>
       <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
-        <img src="/public/Cart.png" className="mx-auto mb-6" />
+        <img src="/Cart.png" className="mx-auto mb-6" />
         <h3 className="text-lg font-medium mb-2">Rossi Tires Product Set</h3>
         <div className="flex items-center gap-3">
           <span className="text-red-500 font-semibold">$500</span>
@@ -131,7 +131,7 @@ export const Product = () => {
         </div>
       </div>
       <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
-        <img src="/public/Cart.png" className="mx-auto mb-6" />
+        <img src="/Cart.png" className="mx-auto mb-6" />
         <h3 className="text-lg font-medium mb-2">Rossi Tires Product Set</h3>
         <div className="flex items-center gap-3">
           <span className="text-red-500 font-semibold">$500</span>
@@ -142,7 +142,7 @@ export const Product = () => {
         </div>
       </div>
       <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
-        <img src="/public/Cart.png" className="mx-auto mb-6" />
+        <img src="/Cart.png" className="mx-auto mb-6" />
         <h3 className="text-lg font-medium mb-2">Rossi Tires Product Set</h3>
         <div className="flex items-center gap-3">
           <span className="text-red-500 font-semibold">$500</span>
@@ -153,7 +153,7 @@ export const Product = () => {
         </div>
       </div>
       <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
-        <img src="/public/Cart.png" className="mx-auto mb-6" />
+        <img src="/Cart.png" className="mx-auto mb-6" />
         <h3 className="text-lg font-medium mb-2">Rossi Tires Product Set</h3>
         <div className="flex items-center gap-3">
           <span className="text-red-500 font-semibold">$500</span>
@@ -164,7 +164,7 @@ export const Product = () => {
         </div>
       </div>
       <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
-        <img src="/public/Cart.png" className="mx-auto mb-6" />
+        <img src="/Cart.png" className="mx-auto mb-6" />
         <h3 className="text-lg font-medium mb-2">Rossi Tires Product Set</h3>
         <div className="flex items-center gap-3">
           <span className="text-red-500 font-semibold">$500</span>
@@ -175,7 +175,7 @@ export const Product = () => {
         </div>
       </div>
       <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
-        <img src="/public/Cart.png" className="mx-auto mb-6" />
+        <img src="/Cart.png" className="mx-auto mb-6" />
         <h3 className="text-lg font-medium mb-2">Rossi Tires Product Set</h3>
         <div className="flex items-center gap-3">
           <span className="text-red-500 font-semibold">$500</span>
@@ -186,7 +186,7 @@ export const Product = () => {
         </div>
       </div>
       <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
-        <img src="/public/Cart.png" className="mx-auto mb-6" />
+        <img src="/Cart.png" className="mx-auto mb-6" />
         <h3 className="text-lg font-medium mb-2">Rossi Tires Product Set</h3>
         <div className="flex items-center gap-3">
           <span className="text-red-500 font-semibold">$500</span>
@@ -197,7 +197,7 @@ export const Product = () => {
         </div>
       </div>
       <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
-        <img src="/public/Cart.png" className="mx-auto mb-6" />
+        <img src="/Cart.png" className="mx-auto mb-6" />
         <h3 className="text-lg font-medium mb-2">Rossi Tires Product Set</h3>
         <div className="flex items-center gap-3">
           <span className="text-red-500 font-semibold">$500</span>
@@ -208,7 +208,7 @@ export const Product = () => {
         </div>
       </div>
       <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
-        <img src="/public/Cart.png" className="mx-auto mb-6" />
+        <img src="/Cart.png" className="mx-auto mb-6" />
         <h3 className="text-lg font-medium mb-2">Rossi Tires Product Set</h3>
         <div className="flex items-center gap-3">
           <span className="text-red-500 font-semibold">$500</span>
@@ -219,7 +219,7 @@ export const Product = () => {
         </div>
       </div>
       <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
-        <img src="/public/Cart.png" className="mx-auto mb-6" />
+        <img src="/Cart.png" className="mx-auto mb-6" />
         <h3 className="text-lg font-medium mb-2">Rossi Tires Product Set</h3>
         <div className="flex items-center gap-3">
           <span className="text-red-500 font-semibold">$500</span>
@@ -230,7 +230,7 @@ export const Product = () => {
         </div>
       </div>
       <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
-        <img src="/public/Cart.png" className="mx-auto mb-6" />
+        <img src="/Cart.png" className="mx-auto mb-6" />
         <h3 className="text-lg font-medium mb-2">Rossi Tires Product Set</h3>
         <div className="flex items-center gap-3">
           <span className="text-red-500 font-semibold">$500</span>
