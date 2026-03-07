@@ -3,31 +3,35 @@ import React from 'react'
 export const Page = () => {
   return (
     <>
-     <div className="max-w-7xl mx-auto py-10 flex gap-10">
+
+
+  {/* Top Section */}
+
+    <div className="max-w-7xl mx-auto py-10 flex gap-10">
 
        
         <aside className="w-64 border-r border-gray-300 pr-6">
-          <ul className="space-y-6 text-gray-700">
+          <ul className="space-y-4 text-gray-700">
             <li className="flex justify-between items-center hover:text-black cursor-pointer font-semibold">
-              Bikes <span>›</span>
+              Woman's Fashion <span className='text-xl'>›</span>
             </li>
             <li className="flex justify-between items-center hover:text-black cursor-pointer font-semibold">
-              Accessories <span>›</span>
+              Men's Fashion <span className='text-xl'>›</span>
             </li>
             <li className="flex justify-between items-center hover:text-black cursor-pointer font-semibold">
-              Services <span>›</span>
+              Electronics <span className='text-xl'>›</span>
             </li>
-            <li className="hover:text-black cursor-pointer font-semibold ">Maintenance</li>
-            <li className="hover:text-black cursor-pointer font-semibold">Ducati Club</li>
-            <li className="hover:text-black cursor-pointer font-semibold">App</li>
-            <li className="hover:text-black cursor-pointer font-semibold">Racing</li>
-            <li className="hover:text-black cursor-pointer font-semibold">Cooperate</li>
+            <li className="hover:text-black cursor-pointer font-semibold ">Home & Lifestyle</li>
+            <li className="hover:text-black cursor-pointer font-semibold">Medicine</li>
+            <li className="hover:text-black cursor-pointer font-semibold">Sports & Outdoor</li>
+            <li className="hover:text-black cursor-pointer font-semibold">Baby's & Toys</li>
+            <li className="hover:text-black cursor-pointer font-semibold">Groceries & Pets</li>
           </ul>
         </aside>
 
         
         <div className="relative flex-1 overflow-hidden rounded-lg">
-          <img  src="/ducati.png" className="w-full h-105 object-cover"/>
+          <img  src="/iphone.png" className="w-full h-105 object-cover"/>
 
           <div className="absolute inset-0 bg-linear-to-r from-black/80 via-black/40 to-transparent"></div>
 
@@ -51,16 +55,261 @@ export const Page = () => {
             <div className="w-3 h-3 rounded-full bg-gray-400"></div>
           </div>
         </div>
+    </div>
+
+
+
+  {/* Flash Sales */}
+
+    <div className='ml-30 mt-15'>
+      <div className="flex items-center gap-3 mb-4">
+      <div className="w-4 h-8 bg-red-500 rounded"></div>
+      <p className="text-red-500 font-semibold text-[20px]">Today's</p>
+      </div>
+      <div className='flex items-center gap-20'>
+      <div>
+        <p className='text-4xl font-bold'>Flash Sales</p>
+      </div>
+      <div>
+      <div className='grid grid-cols-4 list-none w-100 font-medium text-[13px]'>
+        <li>Days</li>
+        <li>Hours</li>
+        <li>Minutes</li>
+        <li>Seconds</li>
+      </div>
+      <div className='grid grid-cols-4 list-none w-100 font-medium text-4xl mt-1'>
+        <li className='flex items-center'>03 <i class="fa-solid fa-ellipsis-vertical text-3xl text-red-500"></i> </li>
+        <li className='flex items-center'>22 <i class="fa-solid fa-ellipsis-vertical text-3xl  text-red-500"></i> </li>
+        <li className='flex items-center'>16 <i class="fa-solid fa-ellipsis-vertical text-3xl  text-red-500"></i> </li>
+        <li className='flex items-center'>07</li>
+      
+      </div>
+      </div>
+      </div>
+      
+      <div className='grid grid-cols-5 gap-5 mt-3'>
+   
+    
+      <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
+        <img src="/Flash Sales/joystick.png" className="mx-auto mb-6" />
+        <h3 className="text-lg font-medium mb-2">Joystick</h3>
+        <div className="flex items-center gap-3">
+          <span className="text-red-500 font-semibold">$30</span>
+          <div className="flex text-yellow-400">
+            ★★★☆☆
+          </div>
+          <span className="text-gray-500">(100)</span>
+        </div>
+      </div>
+      <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
+        <img src="/Flash Sales/keyboard.png" className="mx-auto mb-6" />
+        <h3 className="text-lg font-medium mb-2">Ak-900 Wired Keyboard</h3>
+        <div className="flex items-center gap-3">
+          <span className="text-red-500 font-semibold">$200</span>
+          <div className="flex text-yellow-400">
+            ★★★☆☆
+          </div>
+          <span className="text-gray-500">(125)</span>
+        </div>
+      </div>
+      <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
+        <img src="/Flash Sales/monitor.png" className="mx-auto mb-6" />
+        <h3 className="text-lg font-medium mb-2">Gaming Monitor</h3>
+        <div className="flex items-center gap-3">
+          <span className="text-red-500 font-semibold">$5450</span>
+          <div className="flex text-yellow-400">
+            ★★★☆☆
+          </div>
+          <span className="text-gray-500">(1543)</span>
+        </div>
+      </div>
+      <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
+        <img src="/Flash Sales/chair.png" className="mx-auto mb-6" />
+        <h3 className="text-lg font-medium mb-2">S-series Comfort Chair</h3>
+        <div className="flex items-center gap-3">
+          <span className="text-red-500 font-semibold">$130</span>
+          <div className="flex text-yellow-400">
+            ★★★☆☆
+          </div>
+          <span className="text-gray-500">(1346)</span>
+        </div>
+      </div>
+      <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
+        <img src="/Cart.png" className="mx-auto mb-6" />
+        <h3 className="text-lg font-medium mb-2">Asus TUF f15</h3>
+        <div className="flex items-center gap-3">
+          <span className="text-red-500 font-semibold">$1000</span>
+          <div className="flex text-yellow-400">
+            ★★★☆☆
+          </div>
+          <span className="text-gray-500">(159)</span>
+        </div>
+      </div>
       </div>
 
-     
+      <div className='text-center mt-12'>
+        <button className='bg-red-500 text-white w-60 h-10 rounded-[5px]'>View All Products</button>
+      </div>
 
-  <section className="max-w-7xl mx-auto py-16 px-6">
+      <hr className='mt-20 w-325 text-gray-300 '></hr>
+    </div>
+
+  {/* Browse By Catgory */}
+
+  <div className='ml-30 mt-15 mr-30'>
+      <div className="flex items-center gap-3 mb-4">
+      <div className="w-4 h-8 bg-red-500 rounded"></div>
+      <p className="text-red-500 font-semibold text-[20px]">Categories</p>
+      </div>
+     <div className="flex justify-between items-center mb-12">
+      <h2 className="text-4xl font-bold">Browse By Category</h2>
+      <div className="flex gap-4">
+        <button className="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center hover:bg-gray-300">
+          ←
+        </button>
+        <button className="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center hover:bg-gray-300">
+          →
+        </button>
+      </div>
+    </div>
+
+    <div className='grid grid-cols-6 list-none ml-20 text-6xl text-gray-400'>
+
+      <li className='border w-40 text-center h-30'><i class="fa-solid fa-mobile-button mt-3"></i><p className='text-[20px] text-black font-medium mt-3'>Mobile</p></li>
+      <li className='border w-40 text-center h-30'><i class="fa-solid fa-desktop mt-3"></i> <p className='text-[20px] text-black font-medium mt-3'>Computer</p></li>
+      <li className='border w-40 text-center h-30'><i class="fa-solid fa-car-rear mt-3"></i><p className='text-[20px] text-black font-medium mt-3'>Car</p></li>
+      <li className='border w-40 text-center h-30'><i class="fa-solid fa-headphones mt-3"></i><p className='text-[20px] text-black font-medium mt-3'>Headphone</p></li>
+      <li className='border w-40 text-center h-30'><i class="fa-solid fa-gamepad mt-3"></i><p className='text-[20px] text-black font-medium mt-3'>Gaming</p></li>
+      <li className='border w-40 text-center h-30'><i class="fa-solid fa-camera mt-3"></i><p className='text-[20px] text-black font-medium mt-3'>Camera</p></li>
+      
+    </div>
+    <hr className='mt-20 w-325 text-gray-300 '></hr>
+  </div>
+
+
+  {/* Best selling */}
+
+    <div className='ml-30 mt-15 mr-30'>
+      <div className="flex items-center gap-3 mb-4">
+      <div className="w-4 h-8 bg-red-500 rounded"></div>
+      <p className="text-red-500 font-semibold text-[20px]">This Month</p>
+      </div>
+
+      <div className="flex justify-between items-center mb-12">
+      <h2 className="text-4xl font-bold">Browse By Category</h2>
+      <div className="flex gap-4">
+       <button className='bg-red-500 w-30 text-white h-10 rounded-[5px]'>View All</button>
+      </div>
+      </div>
+
+
+       <div className='grid grid-cols-4 gap-5 mt-3'>
+
     
-   
+
+      <div className="bg-white  rounded-xl shadow-sm hover:shadow-lg transition">
+        <img src="/bestseller/gucci.png" className="mx-auto mb-6" />
+        <h3 className="text-lg font-medium mb-2 ml-5">Gucci Bag</h3>
+        <div className="flex items-center gap-3 m-5 text-[18px]">
+          <span className="text-red-500 font-semibold">$10233</span>
+          <div className="flex text-yellow-400">
+            ★★★☆☆
+          </div>
+          <span className="text-gray-500">(123123)</span>
+        </div>
+      </div>
+
+      <div className="bg-white  rounded-xl shadow-sm hover:shadow-lg transition">
+        <img src="/bestseller/cpucooler.png" className="mx-auto mb-6" />
+        <h3 className="text-lg font-medium mb-2 ml-5">RGB CPU cooler</h3>
+        <div className="flex items-center gap-3 m-5 text-[18px]">
+          <span className="text-red-500 font-semibold">$30</span>
+          <div className="flex text-yellow-400">
+            ★★★☆☆
+          </div>
+          <span className="text-gray-500">(1123)</span>
+        </div>
+      </div>
+
+      <div className="bg-white  rounded-xl shadow-sm hover:shadow-lg transition">
+        <img src="/bestseller/bookself.png" className="mx-auto mb-6" />
+        <h3 className="text-lg font-medium mb-2 ml-5">Limited Small Book-Self</h3>
+        <div className="flex items-center gap-3 m-5 text-[18px]">
+          <span className="text-red-500 font-semibold">$1200</span>
+          <div className="flex text-yellow-400">
+            ★★★☆☆
+          </div>
+          <span className="text-gray-500">(1220)</span>
+        </div>
+      </div>
+
+      <div className="bg-white  rounded-xl shadow-sm hover:shadow-lg transition">
+        <img src="/bestseller/jacket.png" className="mx-auto mb-6" />
+        <h3 className="text-lg font-medium mb-2 ml-5">Trekking Jacker</h3>
+        <div className="flex items-center gap-3 m-5 text-[18px]">
+          <span className="text-red-500 font-semibold">$300</span>
+          <div className="flex text-yellow-400">
+            ★★★☆☆
+          </div>
+          <span className="text-gray-500">(12344)</span>
+        </div>
+      </div>
+
+      
+
+     
+      
+      </div>
+      <hr className='mt-20 w-325 text-gray-300 '></hr>
+    </div>
+
+
+
+  {/* enhance your music experience */}
+    
+    <div className='ml-30 mt-15 mr-30 bg-[url("musicEXP.png")] h-135 '>
+    
+    <div className='w-[50%] p-15 pt-20'>
+      <p className='text-green-400 font-medium text-2xl'>Categories</p>
+      <p className='text-white font-bold text-6xl mt-8'>Enhance Your</p>
+      <p className='text-white font-bold text-6xl mt-1.5'>Music Experience</p>
+
+      <div className='grid grid-cols-4 list-none w-100 mt-14'>
+
+        <div className='bg-white h-17 w-17 rounded-[50%] text-center font-medium pt-1'>
+          <li className='text-xl font-bold'>23</li>
+          <li>Hours</li>
+        </div>
+        <div className='bg-white h-17 w-17 rounded-[50%] text-center font-medium  pt-1'>
+          <li className='text-xl font-bold'>05</li>
+          <li>Days</li>
+        </div>
+        <div className='bg-white h-17 w-17 rounded-[50%] text-center font-medium  pt-1'>
+          <li className='text-xl font-bold'>59</li>
+          <li>Mins</li>
+        </div>
+        <div className='bg-white h-17 w-17 rounded-[50%] text-center font-medium  pt-1'>
+          <li className='text-xl font-bold'>35</li>
+          <li>Sec</li>
+        </div>
+
+      </div>
+
+      <button className='bg-green-500 text-white mt-10 w-40 h-11 rounded-[5px] font-medium'>Buy Now</button>
+    </div>
+
+    </div>
+  
+
+
+  {/* Exlpore Product */}
+
+    
+    
+   <div className='ml-30 mt-25 mr-30'>
     <div className="flex items-center gap-3 mb-4">
-      <div className="w-2 h-8 bg-red-500 rounded"></div>
-      <p className="text-red-500 font-semibold">Our Products</p>
+      <div className="w-4 h-8 bg-red-500 rounded"></div>
+      <p className="text-red-500 font-semibold text-[20px]">Our Products</p>
     </div>
 
     <div className="flex justify-between items-center mb-12">
@@ -128,7 +377,8 @@ export const Page = () => {
       </div>
 
     </div>
-  </section>
+    </div>
+   
     </>
   )
 }
