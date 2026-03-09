@@ -175,12 +175,12 @@ export const Page = () => {
 
     <div className='grid grid-cols-6 list-none ml-20 text-6xl text-gray-400'>
 
-      <li className='border w-40 text-center h-30'><i class="fa-solid fa-mobile-button mt-3"></i><p className='text-[20px] text-black font-medium mt-3'>Mobile</p></li>
-      <li className='border w-40 text-center h-30'><i class="fa-solid fa-desktop mt-3"></i> <p className='text-[20px] text-black font-medium mt-3'>Computer</p></li>
-      <li className='border w-40 text-center h-30'><i class="fa-solid fa-car-rear mt-3"></i><p className='text-[20px] text-black font-medium mt-3'>Car</p></li>
-      <li className='border w-40 text-center h-30'><i class="fa-solid fa-headphones mt-3"></i><p className='text-[20px] text-black font-medium mt-3'>Headphone</p></li>
-      <li className='border w-40 text-center h-30'><i class="fa-solid fa-gamepad mt-3"></i><p className='text-[20px] text-black font-medium mt-3'>Gaming</p></li>
-      <li className='border w-40 text-center h-30'><i class="fa-solid fa-camera mt-3"></i><p className='text-[20px] text-black font-medium mt-3'>Camera</p></li>
+      <li className='border w-40 text-center h-30 hover:bg-red-500 hover:text-white'><i class="fa-solid fa-mobile-button mt-3"></i><p className='text-[20px] font-medium mt-3'>Mobile</p></li>
+      <li className='border w-40 text-center h-30 hover:bg-red-500 hover:text-white'><i class="fa-solid fa-desktop mt-3"></i> <p className='text-[20px]  font-medium mt-3'>Computer</p></li>
+      <li className='border w-40 text-center h-30 hover:bg-red-500 hover:text-white'><i class="fa-solid fa-car-rear mt-3"></i><p className='text-[20px]  font-medium mt-3'>Car</p></li>
+      <li className='border w-40 text-center h-30 hover:bg-red-500 hover:text-white'><i class="fa-solid fa-headphones mt-3"></i><p className='text-[20px]  font-medium mt-3'>Headphone</p></li>
+      <li className='border w-40 text-center h-30 hover:bg-red-500 hover:text-white'><i class="fa-solid fa-gamepad mt-3"></i><p className='text-[20px]  font-medium mt-3'>Gaming</p></li>
+      <li className='border w-40 text-center h-30 hover:bg-red-500 hover:text-white'><i class="fa-solid fa-camera mt-3"></i><p className='text-[20px]  font-medium mt-3'>Camera</p></li>
       
     </div>
     <hr className='mt-20 w-325 text-gray-300 '></hr>
@@ -324,11 +324,11 @@ export const Page = () => {
       </div>
     </div>
 
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    <div className="grid grid-cols-4 gap-10">
       
       <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
-        <img src="/Cart.png" className="mx-auto mb-6" />
-        <h3 className="text-lg font-medium mb-2">Gear set</h3>
+        <img src="/explore products/petfood.png" className="mx-auto mb-6" />
+        <h3 className="text-lg font-medium mb-2">Breed Dry dog food</h3>
         <div className="flex items-center gap-3">
           <span className="text-red-500 font-semibold">$100</span>
           <div className="flex text-yellow-400">
@@ -337,46 +337,86 @@ export const Page = () => {
           <span className="text-gray-500">(35)</span>
         </div>
       </div>
-
       <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
-        <img src="/Cart.png" className="mx-auto mb-6" />
-        <h3 className="text-lg font-medium mb-2">Ducati hoodie</h3>
+        <img src="/explore products/camera.png" className="mx-auto mb-6" />
+        <h3 className="text-lg font-medium mb-2">Canon Camera</h3>
         <div className="flex items-center gap-3">
           <span className="text-red-500 font-semibold">$360</span>
           <div className="flex text-yellow-400">
-            ★★★★☆
+            ★★★☆☆
           </div>
-          <span className="text-gray-500">(95)</span>
+          <span className="text-gray-500">(335)</span>
         </div>
       </div>
-
-     
       <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
         <img src="/Cart.png" className="mx-auto mb-6" />
-        <h3 className="text-lg font-medium mb-2">ASUS FHD Gaming Laptop</h3>
+        <h3 className="text-lg font-medium mb-2">Asus FHD Gaming Laptop</h3>
         <div className="flex items-center gap-3">
           <span className="text-red-500 font-semibold">$700</span>
           <div className="flex text-yellow-400">
-            ★★★★★
+            ★★★☆☆
           </div>
-          <span className="text-gray-500">(325)</span>
+          <span className="text-gray-500">(223)</span>
         </div>
       </div>
-
-      
       <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
-        <img src="/Cart.png" className="mx-auto mb-6" />
-        <h3 className="text-lg font-medium mb-2">Rossi Tires Product Set</h3>
+        <img src="/explore products/curology.png" className="mx-auto mb-6" />
+        <h3 className="text-lg font-medium mb-2">Curology Product Set</h3>
         <div className="flex items-center gap-3">
           <span className="text-red-500 font-semibold">$500</span>
           <div className="flex text-yellow-400">
-            ★★★★☆
+            ★★★☆☆
           </div>
-          <span className="text-gray-500">(145)</span>
+          <span className="text-gray-500">(143)</span>
         </div>
       </div>
-
+      <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
+        <img src="/explore products/toycar.png" className="mx-auto mb-6" />
+        <h3 className="text-lg font-medium mb-2">Kids Electric Car</h3>
+        <div className="flex items-center gap-3">
+          <span className="text-red-500 font-semibold">$960</span>
+          <div className="flex text-yellow-400">
+            ★★★☆☆
+          </div>
+          <span className="text-gray-500">(65)</span>
+        </div>
+      </div>
+      <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
+        <img src="/explore products/boots.png" className="mx-auto mb-6" />
+        <h3 className="text-lg font-medium mb-2">KK boots</h3>
+        <div className="flex items-center gap-3">
+          <span className="text-red-500 font-semibold">$124</span>
+          <div className="flex text-yellow-400">
+            ★★★☆☆
+          </div>
+          <span className="text-gray-500">(655)</span>
+        </div>
+      </div>
+      <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
+        <img src="/explore products/joystick.png" className="mx-auto mb-6" />
+        <h3 className="text-lg font-medium mb-2">RCG joystick</h3>
+        <div className="flex items-center gap-3">
+          <span className="text-red-500 font-semibold">$1240</span>
+          <div className="flex text-yellow-400">
+            ★★★☆☆
+          </div>
+          <span className="text-gray-500">(124)</span>
+        </div>
+      </div>
+      <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
+        <img src="/explore products/jacket.png" className="mx-auto mb-6" />
+        <h3 className="text-lg font-medium mb-2">Jacket</h3>
+        <div className="flex items-center gap-3">
+          <span className="text-red-500 font-semibold">$660</span>
+          <div className="flex text-yellow-400">
+            ★★★☆☆
+          </div>
+          <span className="text-gray-500">(1243)</span>
+        </div>
+      </div>
+     
     </div>
+
     </div>
    
     </>

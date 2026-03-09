@@ -2,60 +2,110 @@ import React from 'react'
 
 export const Contact = () => {
   return (
-    <>
-     <div className='flex justify-center'>
-    <div className="bg-white shadow-xl rounded-2xl w-full max-w-4xl grid md:grid-cols-2 overflow-hidden mb-5">
-    
-    
-    <div className="bg-black text-white p-8 flex flex-col justify-center">
-      <h2 className="text-3xl font-bold mb-4">Get in Touch</h2>
-      <p className="mb-6 text-blue-100">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dolor doloribus voluptas at! Perferendis, nihil nesciunt. Error recusandae quas 
-      </p>
+  <>
+  <div class=" min-h-screen py-16 px-6">
 
-      <div className="space-y-3">
-        <p>Kathmandu, Nepal</p>
-        <p>uniqueunish93@email.com</p>
-        <p> +977 9841399247</p>
+
+  <div class="max-w-6xl mx-auto mb-10 text-gray-500">
+    Home / <span class="text-black">Contact</span>
+  </div>
+
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+
+   
+    <div class="bg-white p-8 shadow rounded-lg space-y-8">
+
+     
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="bg-red-500 text-white w-10 h-10 flex items-center justify-center rounded-full">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+          <h3 class="font-semibold">Call To Us</h3>
+        </div>
+
+        <p class="text-gray-500 text-sm">
+          We are available 24/7, 7 days a week.
+        </p>
+
+        <p class="text-sm mt-2">
+          Phone: +977 9841399247
+        </p>
       </div>
+
+      <hr/>
+
+      
+      <div>
+        <div class="flex items-center gap-3 mb-3">
+          <div class="bg-red-500 text-white w-10 h-10 flex items-center justify-center rounded-full">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <h3 class="font-semibold">Write To Us</h3>
+        </div>
+
+        <p class="text-gray-500 text-sm">
+          Fill out our form and we will contact you within 24 hours.
+        </p>
+
+        <p class="text-sm mt-2">Emails: customer@exclusive.com</p>
+        <p class="text-sm">Emails: uniqueunish@exclusive.com</p>
+      </div>
+
     </div>
 
-    
-    <div className="p-8">
-      <h3 className="text-2xl font-semibold mb-6 text-gray-800">Contact Form</h3>
 
-      <form className="space-y-4">
+   
+    <div class="bg-white p-8 shadow rounded-lg md:col-span-2">
+
+      <form class="space-y-6"/>
+
+      
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+          <input
+            type="text"
+            placeholder="Your Name *"
+            class="bg-gray-100 p-3 rounded outline-none mt-2"
+          />
+
+          <input
+            type="email"
+            placeholder="Your Email *"
+            class="bg-gray-100 p-3 rounded outline-none"
+          />
+
+          <input
+            type="text"
+            placeholder="Your Phone *"
+            class="bg-gray-100 p-3 rounded outline-none"
+          />
+
+        </div>
+
         
+        <textarea
+          rows="6"
+          placeholder="Your Message"
+          class="w-full bg-gray-100 p-4 rounded outline-none mt-5"
+        ></textarea>
+
         
-        <div>
-          <label className="block text-gray-700 mb-1">Full Name</label>
-          <input type="text" className="w-full px-4 py-2 border rounded-lg focus:ring-blue-500" placeholder="Enter your name"/>
+        <div class="flex justify-end mt-4">
+          <button
+            class="bg-red-500 text-white px-8 py-3 rounded hover:bg-red-600 transition"
+          >
+            Send Message
+          </button>
         </div>
 
-        <div>
-          <label className="block text-gray-700 mb-1">Email</label>
-          <input type="email" className="w-full px-4 py-2 border rounded-lg focus:ring-blue-500" placeholder="Enter your email"/>
-        </div>
+      
 
-       
-        <div>
-          <label className="block text-gray-700 mb-1">Message</label>
-          <textarea rows="4"
-            className="w-full px-4 py-2 border rounded-lg focus:ring-blue-500"
-            placeholder="Write your message"></textarea>
-        </div>
-
-       
-        <button
-          className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition duration-300">
-          Send Message
-        </button>
-
-      </form>
     </div>
 
   </div>
-  </div>
+
+</div>
   </>
   )
 }

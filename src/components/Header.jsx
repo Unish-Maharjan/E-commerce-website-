@@ -1,32 +1,69 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 export const Header = () => {
-  return (
-    <>
-    <nav className=' sticky top-0 z-10'>
-    <div className='flex justify-between h-20 bg-white items-center ml-26'>
-        <div className=' text-3xl p-3  text-bold font-bold text-red-600'>
-         UnishPasal
-        </div>
-        <div className='flex list-none gap-12 items-baseline-last mr-25 text-[16px] font-semibold h-full mb-10'>
-            <Link to="/home"><li className='hover:animate-pulse'>Home</li></Link>
-            <Link to="/about"><li className='hover:animate-pulse'>About</li></Link>
-            <Link to="/connect"><li className='hover:animate-pulse'>Contact</li></Link>
-            <Link to="/product"><li className='hover:animate-pulse'>Product</li></Link>
-            <Link to="/signup"><li className='hover:animate-pulse'>Sign Up</li></Link>
-        </div>
-        <div className='flex mr-30 w-80 justify-center items-baseline-last gap-7 h-full mb-10 '>
-          <input type='text' placeholder='Search?' className='bg-gray-200 w-60 h-8 p-4 outline-none rounded-[5px]'/>
-          <i class="fa-regular fa-heart text-2xl"></i>
-          <i class="fa-solid fa-cart-arrow-down text-2xl"></i>
-        </div>
-    </div>
-    <hr className='text-gray-300'/>
-    </nav>
-    </>
-  )
-}
+  const [menuOpen, setMenuOpen] = useState(false);
 
-export default Header
+  return (
+    <nav className="sticky top-0 z-50 bg-white shadow">
+      
+      <div className="flex justify-between items-center h-20 px-6 md:px-16">
+
+        {/* Logo */}
+        <div className="text-3xl font-bold text-red-600">
+          UnishPasal
+        </div>
+
+        {/* Desktop Menu */}
+        <ul className="hidden md:flex gap-10 text-[16px] font-semibold">
+          <Link to="/home"><li className="hover:text-red-500">Home</li></Link>
+          <Link to="/about"><li className="hover:text-red-500">About</li></Link>
+          <Link to="/connect"><li className="hover:text-red-500">Contact</li></Link>
+          <Link to="/product"><li className="hover:text-red-500">Product</li></Link>
+          <Link to="/signup"><li className="hover:text-red-500">Sign Up</li></Link>
+        </ul>
+
+        {/* Search + Icons */}
+        <div className="hidden md:flex items-center gap-6">
+          <input
+            type="text"
+            placeholder="Search?"
+            className="bg-gray-200 w-52 h-9 px-3 outline-none rounded"
+          />
+
+          <i className="fa-regular fa-heart text-xl"></i>
+          <i className="fa-solid fa-cart-arrow-down text-xl"></i>
+        </div>
+
+        {/* Mobile Menu Button */}
+        <button
+          className="md:hidden text-2xl"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          ☰
+        </button>
+      </div>
+
+      {/* Mobile Menu */}
+      {menuOpen && (
+        <div className="md:hidden flex flex-col items-center gap-6 pb-6 font-semibold">
+          <Link to="/home">Home</Link>
+          <Link to="/about">About</Link>
+          <Link to="/connect">Contact</Link>
+          <Link to="/product">Product</Link>
+          <Link to="/signup">Sign Up</Link>
+
+          <input
+            type="text"
+            placeholder="Search?"
+            className="bg-gray-200 w-3/4 h-9 px-3 outline-none rounded"
+          />
+        </div>
+      )}
+
+      <hr className="text-gray-300" />
+    </nav>
+  );
+};
+
+export default Header;

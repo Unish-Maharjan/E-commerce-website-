@@ -3,7 +3,7 @@ import React from 'react'
 export const About = () => {
   return (
     <>
-    <div className="bg-gray-100 min-h-screen py-5 px-6">
+    <div className=" py-5 px-6">
       
       <div className="max-w-6xl mx-auto">
         
@@ -69,6 +69,44 @@ export const About = () => {
         </div>
 
       </div>
+
+{/* founder section */}
+
+      <div className='grid grid-cols-3 list-none pl-30 pr-20 mt-20 ml-35 b '>
+        <div>
+          <img src='Cart.png'/>
+          <li className='text-3xl font-medium mt-4'>Unish Maharjan</li>
+          <li>Founder & Chairman</li>
+          <div className='mt-1'>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+          </div>
+        </div>
+        <div>
+          <img src='Cart.png'/>
+          <li className='text-3xl font-medium mt-4'>Unish Maharjan</li>
+          <li>Founder & Chairman</li>
+          <div className='mt-1'>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+          </div>
+        </div>
+        <div>
+          <img src='Cart.png'/>
+          <li className='text-3xl font-medium mt-4'>Unish Maharjan</li>
+          <li>Founder & Chairman</li>
+          <div className='mt-1'>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+          </div>
+        </div>
+
+      </div>
+
+    
     </div>
     </>
   )

@@ -3,7 +3,7 @@ import React from 'react'
 export const Signup = () => {
   return (
     <>
-    <div className='flex justify-center' >
+    <div className='flex justify-center mt-20' >
   <div className="bg-white shadow-xl rounded-2xl p-8 w-full max-w-md">
     
     <h2 className="text-3xl font-bold text-center mb-6">Create Account</h2>
@@ -35,7 +35,7 @@ export const Signup = () => {
       </div>
 
       
-      <button className="w-full bg-black text-white py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+      <button className="w-full bg-red-500 text-white py-2 rounded-lg hover:bg-blue-700 transition duration-300">
         Sign Up
       </button>
 

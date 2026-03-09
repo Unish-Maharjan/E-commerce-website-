@@ -13,7 +13,7 @@ export const Product = () => {
 
     
 
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    <div className="grid grid-cols-4 gap-10">
       
       <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
         <img src="/Cart.png" className="mx-auto mb-6" />
