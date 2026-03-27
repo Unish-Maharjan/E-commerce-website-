@@ -72,39 +72,51 @@ export const About = () => {
 
 {/* founder section */}
 
-      <div className='grid grid-cols-3 list-none pl-30 pr-20 mt-20 ml-35 b '>
-        <div>
-          <img src='Cart.png'/>
-          <li className='text-3xl font-medium mt-4'>Unish Maharjan</li>
-          <li>Founder & Chairman</li>
-          <div className='mt-1'>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-linkedin-in"></i>
-          </div>
-        </div>
-        <div>
-          <img src='Cart.png'/>
-          <li className='text-3xl font-medium mt-4'>Unish Maharjan</li>
-          <li>Founder & Chairman</li>
-          <div className='mt-1'>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-linkedin-in"></i>
-          </div>
-        </div>
-        <div>
-          <img src='Cart.png'/>
-          <li className='text-3xl font-medium mt-4'>Unish Maharjan</li>
-          <li>Founder & Chairman</li>
-          <div className='mt-1'>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-linkedin-in"></i>
-          </div>
-        </div>
+      <div className='grid grid-cols-3 gap-10 px-30 mt-20'>
 
-      </div>
+  
+  <div className='flex flex-col items-center text-center'>
+    <div className='w-72 h-80 overflow-hidden rounded-xl shadow-md'>
+      <img src='/unish.jpg' className='w-full h-full object-cover object-top hover:scale-105 transition duration-300'/>
+    </div>
+    <p className='text-2xl font-semibold mt-4'>Unish Maharjan</p>
+    <p className='text-gray-500 text-sm'>Founder & Chairman</p>
+    <div className='flex gap-3 mt-2 text-gray-600'>
+      <i className="fa-brands fa-instagram hover:text-pink-500 cursor-pointer transition"></i>
+      <i className="fa-brands fa-twitter hover:text-blue-400 cursor-pointer transition"></i>
+      <i className="fa-brands fa-linkedin-in hover:text-blue-600 cursor-pointer transition"></i>
+    </div>
+  </div>
+
+  
+  <div className='flex flex-col items-center text-center'>
+    <div className='w-72 h-80 overflow-hidden rounded-xl shadow-md'>
+      <img src='/ken.jpg' className='w-full h-full object-cover object-top hover:scale-105 transition duration-300'/>
+    </div>
+    <p className='text-2xl font-semibold mt-4'>Ken Maharjan</p>
+    <p className='text-gray-500 text-sm'>Janitor</p>
+    <div className='flex gap-3 mt-2 text-gray-600'>
+      <i className="fa-brands fa-instagram hover:text-pink-500 cursor-pointer transition"></i>
+      <i className="fa-brands fa-twitter hover:text-blue-400 cursor-pointer transition"></i>
+      <i className="fa-brands fa-linkedin-in hover:text-blue-600 cursor-pointer transition"></i>
+    </div>
+  </div>
+
+  
+  <div className='flex flex-col items-center text-center'>
+    <div className='w-72 h-80 overflow-hidden rounded-xl shadow-md'>
+      <img src='/onil.jpg' className='w-full h-full object-cover object-top hover:scale-105 transition duration-300'/>
+    </div>
+    <p className='text-2xl font-semibold mt-4'>Onil Maharjan</p>
+    <p className='text-gray-500 text-sm'>Khai k position ho</p>
+    <div className='flex gap-3 mt-2 text-gray-600'>
+      <i className="fa-brands fa-instagram hover:text-pink-500 cursor-pointer transition"></i>
+      <i className="fa-brands fa-twitter hover:text-blue-400 cursor-pointer transition"></i>
+      <i className="fa-brands fa-linkedin-in hover:text-blue-600 cursor-pointer transition"></i>
+    </div>
+  </div>
+
+</div>
 
     
     </div>

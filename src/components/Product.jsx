@@ -4,9 +4,9 @@ export const Product = () => {
    const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("https://fakestoreapi.com/products")
+    fetch("https://dummyjson.com/products")
       .then(res => res.json())
-      .then(data => setProducts(data));
+      .then(data => setProducts(data.products));
   }, []);
 
  
@@ -19,34 +19,34 @@ export const Product = () => {
     
    
       <div className="flex items-center gap-3 mb-4">
-        <div className="w-2 h-8 bg-black rounded"></div>
-        <p className="text-black font-semibold">Our Products</p>
+        <div className="w-2 h-8 bg-red-500 rounded"></div>
+        <p className="text-red-500 font-semibold">Our Products</p>
       </div>
 
       
 
   <div className="grid grid-cols-4 gap-6">
-  {products.map((product) => {
+  {products.map((products) => {
     let number = Math.floor(Math.random() * 100);
 
     return (
       <div
-        key={product.id}
+        key={products.id}
         className="bg-white rounded-xl shadow-sm hover:shadow-md transition overflow-hidden"
       >
         {/* Image */}
         <div className="h-48 flex items-center justify-center bg-gray-50 p-4">
           <img
-            src={product.image}
-            alt={product.title}
+            src={products.thumbnail}
+            alt={products.title}
             className="max-h-full object-contain transition-transform duration-300 hover:scale-105"
           />
         </div>
 
         {/* Content */}
         <div className="p-4 flex flex-col justify-between h-40">
-          <h3 className="text-sm font-medium text-gray-800 line-clamp-2">
-            {product.title}
+          <h3 className="text-[16px] font-medium text-gray-800 line-clamp-2">
+            {products.title}
           </h3>
 
           <div className="flex items-center gap-2 text-sm mt-2">
@@ -58,7 +58,7 @@ export const Product = () => {
 
           <div className="mt-3 flex items-center justify-between">
             <span className="text-lg font-semibold text-red-500">
-              ${product.price}
+              ${products.price}
             </span>
 
             <button className="text-sm bg-red-500 text-white px-3 py-1 rounded-lg hover:bg-gray-800 transition">

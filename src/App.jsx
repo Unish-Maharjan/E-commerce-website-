@@ -9,6 +9,7 @@ import Signup from './components/Signup.jsx'
 import Footer from './components/Footer.jsx'
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import Wishlist from './components/Wishlist.jsx'
 
 function App() {
   const router = createBrowserRouter([
@@ -36,6 +37,10 @@ function App() {
   {
     path: "/signup",
     element: <><Header/><Signup/><Footer/></>
+  },
+  {
+    path: "/wishlist",
+    element: <><Header/><Wishlist/><Footer/></>
   },
 
 ]);

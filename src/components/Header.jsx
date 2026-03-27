@@ -31,8 +31,8 @@ export const Header = () => {
             className="bg-gray-200 w-52 h-9 px-3 outline-none rounded"
           />
 
-          <i className="fa-regular fa-heart text-xl"></i>
-          <i className="fa-solid fa-cart-arrow-down text-xl"></i>
+          <Link to="/wishlist"><i className="fa-regular fa-heart text-xl"></i></Link>
+          <Link to="/wishlist"><i className="fa-solid fa-cart-arrow-down text-xl"></i></Link>
         </div>
 
         {/* Mobile Menu Button */}

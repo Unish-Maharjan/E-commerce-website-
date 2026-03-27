@@ -196,7 +196,7 @@ export const Page = () => {
       </div>
 
       <div className="flex justify-between items-center mb-12">
-      <h2 className="text-4xl font-bold">Browse By Category</h2>
+      <h2 className="text-4xl font-bold">Best Selling</h2>
       <div className="flex gap-4">
        <button className='bg-red-500 w-30 text-white h-10 rounded-[5px]'>View All</button>
       </div>
@@ -267,7 +267,7 @@ export const Page = () => {
 
   {/* enhance your music experience */}
     
-    <div className='ml-30 mt-15 mr-30 bg-[url("musicEXP.png")] h-135 '>
+    <div className='ml-30 mt-15 mr-30 bg-[url("/musicEXP.png")] h-135 '>
     
     <div className='w-[50%] p-15 pt-20'>
       <p className='text-green-400 font-medium text-2xl'>Categories</p>
