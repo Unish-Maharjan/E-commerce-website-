@@ -1,247 +1,77 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
 
 export const Product = () => {
+   const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    fetch("https://fakestoreapi.com/products")
+      .then(res => res.json())
+      .then(data => setProducts(data));
+  }, []);
+
+ 
+
+  
+
   return (
     <>
    <section className="max-w-7xl mx-auto py-16 px-6">
     
    
-    <div className="flex items-center gap-3 mb-4">
-      <div className="w-2 h-8 bg-black rounded"></div>
-      <p className="text-black font-semibold">Our Products</p>
-    </div>
-
-    
-
-    <div className="grid grid-cols-4 gap-10">
-      
-      <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
-        <img src="/Cart.png" className="mx-auto mb-6" />
-        <h3 className="text-lg font-medium mb-2">Gear set</h3>
-        <div className="flex items-center gap-3">
-          <span className="text-red-500 font-semibold">$100</span>
-          <div className="flex text-yellow-400">
-            ★★★☆☆
-          </div>
-          <span className="text-gray-500">(35)</span>
-        </div>
-      </div>
-
-      <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
-        <img src="/Cart.png" className="mx-auto mb-6" />
-        <h3 className="text-lg font-medium mb-2">Ducati hoodie</h3>
-        <div className="flex items-center gap-3">
-          <span className="text-red-500 font-semibold">$360</span>
-          <div className="flex text-yellow-400">
-            ★★★★☆
-          </div>
-          <span className="text-gray-500">(95)</span>
-        </div>
-      </div>
-
-     
-      <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
-        <img src="/Cart.png" className="mx-auto mb-6" />
-        <h3 className="text-lg font-medium mb-2">ASUS FHD Gaming Laptop</h3>
-        <div className="flex items-center gap-3">
-          <span className="text-red-500 font-semibold">$700</span>
-          <div className="flex text-yellow-400">
-            ★★★★★
-          </div>
-          <span className="text-gray-500">(325)</span>
-        </div>
+      <div className="flex items-center gap-3 mb-4">
+        <div className="w-2 h-8 bg-black rounded"></div>
+        <p className="text-black font-semibold">Our Products</p>
       </div>
 
       
-      <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
-        <img src="/Cart.png" className="mx-auto mb-6" />
-        <h3 className="text-lg font-medium mb-2">Rossi Tires Product Set</h3>
-        <div className="flex items-center gap-3">
-          <span className="text-red-500 font-semibold">$500</span>
-          <div className="flex text-yellow-400">
-            ★★★★☆
-          </div>
-          <span className="text-gray-500">(145)</span>
-        </div>
-      </div>
-      <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
-        <img src="/Cart.png" className="mx-auto mb-6" />
-        <h3 className="text-lg font-medium mb-2">Rossi Tires Product Set</h3>
-        <div className="flex items-center gap-3">
-          <span className="text-red-500 font-semibold">$500</span>
-          <div className="flex text-yellow-400">
-            ★★★★☆
-          </div>
-          <span className="text-gray-500">(145)</span>
-        </div>
-      </div>
-      <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
-        <img src="/Cart.png" className="mx-auto mb-6" />
-        <h3 className="text-lg font-medium mb-2">Rossi Tires Product Set</h3>
-        <div className="flex items-center gap-3">
-          <span className="text-red-500 font-semibold">$500</span>
-          <div className="flex text-yellow-400">
-            ★★★★☆
-          </div>
-          <span className="text-gray-500">(145)</span>
-        </div>
-      </div>
-      <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
-        <img src="/Cart.png" className="mx-auto mb-6" />
-        <h3 className="text-lg font-medium mb-2">Rossi Tires Product Set</h3>
-        <div className="flex items-center gap-3">
-          <span className="text-red-500 font-semibold">$500</span>
-          <div className="flex text-yellow-400">
-            ★★★★☆
-          </div>
-          <span className="text-gray-500">(145)</span>
-        </div>
-      </div>
-      <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
-        <img src="/Cart.png" className="mx-auto mb-6" />
-        <h3 className="text-lg font-medium mb-2">Rossi Tires Product Set</h3>
-        <div className="flex items-center gap-3">
-          <span className="text-red-500 font-semibold">$500</span>
-          <div className="flex text-yellow-400">
-            ★★★★☆
-          </div>
-          <span className="text-gray-500">(145)</span>
-        </div>
-      </div>
-      <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
-        <img src="/Cart.png" className="mx-auto mb-6" />
-        <h3 className="text-lg font-medium mb-2">Rossi Tires Product Set</h3>
-        <div className="flex items-center gap-3">
-          <span className="text-red-500 font-semibold">$500</span>
-          <div className="flex text-yellow-400">
-            ★★★★☆
-          </div>
-          <span className="text-gray-500">(145)</span>
-        </div>
-      </div>
-      <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
-        <img src="/Cart.png" className="mx-auto mb-6" />
-        <h3 className="text-lg font-medium mb-2">Rossi Tires Product Set</h3>
-        <div className="flex items-center gap-3">
-          <span className="text-red-500 font-semibold">$500</span>
-          <div className="flex text-yellow-400">
-            ★★★★☆
-          </div>
-          <span className="text-gray-500">(145)</span>
-        </div>
-      </div>
-      <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
-        <img src="/Cart.png" className="mx-auto mb-6" />
-        <h3 className="text-lg font-medium mb-2">Rossi Tires Product Set</h3>
-        <div className="flex items-center gap-3">
-          <span className="text-red-500 font-semibold">$500</span>
-          <div className="flex text-yellow-400">
-            ★★★★☆
-          </div>
-          <span className="text-gray-500">(145)</span>
-        </div>
-      </div>
-      <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
-        <img src="/Cart.png" className="mx-auto mb-6" />
-        <h3 className="text-lg font-medium mb-2">Rossi Tires Product Set</h3>
-        <div className="flex items-center gap-3">
-          <span className="text-red-500 font-semibold">$500</span>
-          <div className="flex text-yellow-400">
-            ★★★★☆
-          </div>
-          <span className="text-gray-500">(145)</span>
-        </div>
-      </div>
-      <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
-        <img src="/Cart.png" className="mx-auto mb-6" />
-        <h3 className="text-lg font-medium mb-2">Rossi Tires Product Set</h3>
-        <div className="flex items-center gap-3">
-          <span className="text-red-500 font-semibold">$500</span>
-          <div className="flex text-yellow-400">
-            ★★★★☆
-          </div>
-          <span className="text-gray-500">(145)</span>
-        </div>
-      </div>
-      <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
-        <img src="/Cart.png" className="mx-auto mb-6" />
-        <h3 className="text-lg font-medium mb-2">Rossi Tires Product Set</h3>
-        <div className="flex items-center gap-3">
-          <span className="text-red-500 font-semibold">$500</span>
-          <div className="flex text-yellow-400">
-            ★★★★☆
-          </div>
-          <span className="text-gray-500">(145)</span>
-        </div>
-      </div>
-      <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
-        <img src="/Cart.png" className="mx-auto mb-6" />
-        <h3 className="text-lg font-medium mb-2">Rossi Tires Product Set</h3>
-        <div className="flex items-center gap-3">
-          <span className="text-red-500 font-semibold">$500</span>
-          <div className="flex text-yellow-400">
-            ★★★★☆
-          </div>
-          <span className="text-gray-500">(145)</span>
-        </div>
-      </div>
-      <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
-        <img src="/Cart.png" className="mx-auto mb-6" />
-        <h3 className="text-lg font-medium mb-2">Rossi Tires Product Set</h3>
-        <div className="flex items-center gap-3">
-          <span className="text-red-500 font-semibold">$500</span>
-          <div className="flex text-yellow-400">
-            ★★★★☆
-          </div>
-          <span className="text-gray-500">(145)</span>
-        </div>
-      </div>
-      <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
-        <img src="/Cart.png" className="mx-auto mb-6" />
-        <h3 className="text-lg font-medium mb-2">Rossi Tires Product Set</h3>
-        <div className="flex items-center gap-3">
-          <span className="text-red-500 font-semibold">$500</span>
-          <div className="flex text-yellow-400">
-            ★★★★☆
-          </div>
-          <span className="text-gray-500">(145)</span>
-        </div>
-      </div>
-      <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
-        <img src="/Cart.png" className="mx-auto mb-6" />
-        <h3 className="text-lg font-medium mb-2">Rossi Tires Product Set</h3>
-        <div className="flex items-center gap-3">
-          <span className="text-red-500 font-semibold">$500</span>
-          <div className="flex text-yellow-400">
-            ★★★★☆
-          </div>
-          <span className="text-gray-500">(145)</span>
-        </div>
-      </div>
-      <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
-        <img src="/Cart.png" className="mx-auto mb-6" />
-        <h3 className="text-lg font-medium mb-2">Rossi Tires Product Set</h3>
-        <div className="flex items-center gap-3">
-          <span className="text-red-500 font-semibold">$500</span>
-          <div className="flex text-yellow-400">
-            ★★★★☆
-          </div>
-          <span className="text-gray-500">(145)</span>
-        </div>
-      </div>
-      <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
-        <img src="/Cart.png" className="mx-auto mb-6" />
-        <h3 className="text-lg font-medium mb-2">Rossi Tires Product Set</h3>
-        <div className="flex items-center gap-3">
-          <span className="text-red-500 font-semibold">$500</span>
-          <div className="flex text-yellow-400">
-            ★★★★☆
-          </div>
-          <span className="text-gray-500">(145)</span>
-        </div>
-      </div>
 
-    </div>
+  <div className="grid grid-cols-4 gap-6">
+  {products.map((product) => {
+    let number = Math.floor(Math.random() * 100);
+
+    return (
+      <div
+        key={product.id}
+        className="bg-white rounded-xl shadow-sm hover:shadow-md transition overflow-hidden"
+      >
+        {/* Image */}
+        <div className="h-48 flex items-center justify-center bg-gray-50 p-4">
+          <img
+            src={product.image}
+            alt={product.title}
+            className="max-h-full object-contain transition-transform duration-300 hover:scale-105"
+          />
+        </div>
+
+        {/* Content */}
+        <div className="p-4 flex flex-col justify-between h-40">
+          <h3 className="text-sm font-medium text-gray-800 line-clamp-2">
+            {product.title}
+          </h3>
+
+          <div className="flex items-center gap-2 text-sm mt-2">
+            <div className="text-yellow-400">★★★★☆</div>
+            <span className="text-gray-500 text-xs">
+              ({number})
+            </span>
+          </div>
+
+          <div className="mt-3 flex items-center justify-between">
+            <span className="text-lg font-semibold text-red-500">
+              ${product.price}
+            </span>
+
+            <button className="text-sm bg-red-500 text-white px-3 py-1 rounded-lg hover:bg-gray-800 transition">
+              Add
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  })}
+  </div>
+
+
   </section>
     </>
   )
