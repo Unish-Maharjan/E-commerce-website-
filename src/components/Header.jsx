@@ -32,7 +32,7 @@ export const Header = () => {
           />
 
           <Link to="/wishlist"><i className="fa-regular fa-heart text-xl"></i></Link>
-          <Link to="/wishlist"><i className="fa-solid fa-cart-arrow-down text-xl"></i></Link>
+          <Link to="/cart"><i className="fa-solid fa-cart-arrow-down text-xl"></i></Link>
         </div>
 
         {/* Mobile Menu Button */}

@@ -7,9 +7,11 @@ import Page from './components/Page.jsx'
 import Product from './components/Product.jsx'
 import Signup from './components/Signup.jsx'
 import Footer from './components/Footer.jsx'
+import Wishlist from './components/Wishlist.jsx'
+import WomenFashion from './components/WomenFashion.jsx'
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Wishlist from './components/Wishlist.jsx'
+import Cart from './components/Cart.jsx'
 
 function App() {
   const router = createBrowserRouter([
@@ -21,37 +23,37 @@ function App() {
       path: "/home",
       element: <><Header/><Page/><Footer/></>
     },
-  {
-    path: "/connect",
-    element: <><Header/><Contact/><Footer/></>
-  },
-  {
-    path: "/about",
-    element: <><Header/><About/><Footer/></>
-  },
+    {
+      path: "/connect",
+      element: <><Header/><Contact/><Footer/></>
+    },
+    {
+      path: "/about",
+      element: <><Header/><About/><Footer/></>
+    },
+    {
+      path: "/product",
+      element: <><Header/><Product/><Footer/></>
+    },
+    {
+      path: "/signup",
+      element: <><Header/><Signup/><Footer/></>
+    },
+    {
+      path: "/wishlist",
+      element: <><Header/><Wishlist/><Footer/></>
+    },
+    {
+      path: "/womenfashion",
+      element: <><Header/><WomenFashion/><Footer/></>
+    },
+    {
+      path: "/cart",
+      element: <><Header/><Cart/><Footer/></>
+    },
+  ]);
 
-  {
-    path: "/product",
-    element: <><Header/><Product/><Footer/></>
-  },
-  {
-    path: "/signup",
-    element: <><Header/><Signup/><Footer/></>
-  },
-  {
-    path: "/wishlist",
-    element: <><Header/><Wishlist/><Footer/></>
-  },
-
-]);
-
-  return (
-    <>
-
-    <RouterProvider router={router} />
-    
-    </>
-  )
+  return <RouterProvider router={router} />  // ← just this, nothing else
 }
 
 export default App

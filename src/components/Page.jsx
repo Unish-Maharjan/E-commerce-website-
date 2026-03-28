@@ -1,6 +1,11 @@
 import React from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { Link } from 'react-router-dom'
+
+
 
 export const Page = () => {
+  
   return (
     <>
 
@@ -12,20 +17,31 @@ export const Page = () => {
        
         <aside className="w-64 border-r border-gray-300 pr-6">
           <ul className="space-y-4 text-gray-700">
-            <li className="flex justify-between items-center hover:text-black cursor-pointer font-semibold">
+            <Link to="/womenfashion" className="flex justify-between items-center hover:text-black cursor-pointer font-semibold">
               Woman's Fashion <span className='text-xl'>›</span>
-            </li>
-            <li className="flex justify-between items-center hover:text-black cursor-pointer font-semibold">
+            </Link>
+            <Link to="/womenfashion" className="flex justify-between items-center hover:text-black cursor-pointer font-semibold">
               Men's Fashion <span className='text-xl'>›</span>
-            </li>
-            <li className="flex justify-between items-center hover:text-black cursor-pointer font-semibold">
+            </Link>
+            <Link to="/womenfashion" className="flex justify-between items-center hover:text-black cursor-pointer font-semibold">
               Electronics <span className='text-xl'>›</span>
-            </li>
-            <li className="hover:text-black cursor-pointer font-semibold ">Home & Lifestyle</li>
-            <li className="hover:text-black cursor-pointer font-semibold">Medicine</li>
-            <li className="hover:text-black cursor-pointer font-semibold">Sports & Outdoor</li>
-            <li className="hover:text-black cursor-pointer font-semibold">Baby's & Toys</li>
-            <li className="hover:text-black cursor-pointer font-semibold">Groceries & Pets</li>
+            </Link>
+            <Link to="/womenfashion" className="flex justify-between items-center hover:text-black cursor-pointer font-semibold">
+              Home & Lifestyle <span className='text-xl'>›</span>
+            </Link>
+            <Link to="/womenfashion" className="flex justify-between items-center hover:text-black cursor-pointer font-semibold">
+              Medicine <span className='text-xl'>›</span>
+            </Link>
+            <Link to="/womenfashion" className="flex justify-between items-center hover:text-black cursor-pointer font-semibold">
+              Sports & Outdoor <span className='text-xl'>›</span>
+            </Link>
+            <Link to="/womenfashion" className="flex justify-between items-center hover:text-black cursor-pointer font-semibold">
+              Baby's & Toys <span className='text-xl'>›</span>
+            </Link>
+            <Link to="/womenfashion" className="flex justify-between items-center hover:text-black cursor-pointer font-semibold">
+              Groceries & Pets <span className='text-xl'>›</span>
+            </Link>
+  
           </ul>
         </aside>
 
