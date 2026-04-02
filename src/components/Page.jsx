@@ -20,10 +20,10 @@ export const Page = () => {
             <Link to="/womenfashion" className="flex justify-between items-center hover:text-black cursor-pointer font-semibold">
               Woman's Fashion <span className='text-xl'>›</span>
             </Link>
-            <Link to="/womenfashion" className="flex justify-between items-center hover:text-black cursor-pointer font-semibold">
+            <Link to="/menfashion" className="flex justify-between items-center hover:text-black cursor-pointer font-semibold">
               Men's Fashion <span className='text-xl'>›</span>
             </Link>
-            <Link to="/womenfashion" className="flex justify-between items-center hover:text-black cursor-pointer font-semibold">
+            <Link to="/electronics" className="flex justify-between items-center hover:text-black cursor-pointer font-semibold">
               Electronics <span className='text-xl'>›</span>
             </Link>
             <Link to="/womenfashion" className="flex justify-between items-center hover:text-black cursor-pointer font-semibold">

@@ -12,6 +12,8 @@ import WomenFashion from './components/WomenFashion.jsx'
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Cart from './components/Cart.jsx'
+import MenFashion from './components/Menfashion.jsx'
+import Electronics from './components/Electronics.jsx'
 
 function App() {
   const router = createBrowserRouter([
@@ -48,9 +50,18 @@ function App() {
       element: <><Header/><WomenFashion/><Footer/></>
     },
     {
+      path: "/menfashion",
+      element: <><Header/><MenFashion/><Footer/></>
+    },
+    {
+      path: "/electronics",
+      element: <><Header/><Electronics/><Footer/></>
+    },
+    {
       path: "/cart",
       element: <><Header/><Cart/><Footer/></>
     },
+    
   ]);
 
   return <RouterProvider router={router} />  // ← just this, nothing else
