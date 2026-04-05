@@ -1,1 +1,16 @@
 @import "tailwindcss";
+
+.MuiTabs-list button{
+  font-weight: 700 !important;
+  
+};
+
+.MuiTabs-list .Mui-selected{ @apply
+  
+  !text-red-600;
+
+}
+
+.MuiTabs-indicator{
+  background-color: red !important;
+}

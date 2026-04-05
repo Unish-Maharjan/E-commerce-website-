@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const WomenFashion = () => {
          
@@ -119,29 +119,40 @@ const WomenFashion = () => {
   },
 ];
 
+  const [search, setSearch] = useState('');
+
   return (
     <section className="max-w-7xl mx-auto py-16 px-6">
     
-   
+   <div className='flex justify-between'>
       <div className="flex items-center gap-3 mb-4">
         <div className="w-2 h-8 bg-red-500 rounded"></div>
         <p className="text-red-500 font-semibold">Our Products</p>
       </div>
 
-      
+      <input
+            type="text"
+            placeholder="Search for your item"
+            className="bg-gray-200 w-100 h-9 px-3 outline-none rounded"
+            onChange={(e) => setSearch(e.target.value)}
+          />
+
+    </div>
 
 
     
     
 
-  <div className="grid grid-cols-4 gap-6">
+  <div className="grid grid-cols-4 gap-6 mt-10">
  
- {product.map((data, index)=>{
+ {product.filter((items)=>{
+  return search.toLowerCase() === '' ? items : items.title.toLowerCase().includes(search) 
+ }).map((data)=>{
       let number = Math.floor(Math.random() * 100);
 
       return(
       <div
-        key={index}
+        
         className="bg-white rounded-xl shadow-sm hover:shadow-md transition overflow-hidden"
       >
         <div className="h-48 flex items-center justify-center bg-gray-50 p-4">
@@ -167,7 +178,7 @@ const WomenFashion = () => {
 
           <div className="mt-3 flex items-center justify-between">
             <span className="text-lg font-semibold text-red-500">
-              {data.Price}
+              $ {data.Price}
             </span>
 
             <button className="text-sm bg-red-500 text-white px-3 py-1 rounded-lg hover:bg-gray-800 transition">

@@ -1,8 +1,15 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
 
 export const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [value, setValue] = React.useState(0);
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
 
   return (
     <nav className="sticky top-0 z-50 bg-white shadow">
@@ -16,11 +23,20 @@ export const Header = () => {
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-10 text-[16px] font-semibold">
-          <Link to="/home"><li className="hover:text-red-500">Home</li></Link>
-          <Link to="/about"><li className="hover:text-red-500">About</li></Link>
-          <Link to="/connect"><li className="hover:text-red-500">Contact</li></Link>
-          <Link to="/product"><li className="hover:text-red-500">Product</li></Link>
-          <Link to="/signup"><li className="hover:text-red-500">Sign Up</li></Link>
+          <Tabs
+                        value={value}
+                        onChange={handleChange}
+                        variant="scrollable"
+                        scrollButtons="auto"
+                        aria-label="scrollable auto tabs example"
+                      
+                    >
+          <Tab label="Home" component={Link} to="/home"></Tab>
+          <Tab label="About" component={Link} to="/about" ></Tab>
+          <Tab label="Contact" component={Link} to="/connect"></Tab>
+          <Tab label="Product" component={Link} to="/product"></Tab>
+          <Tab label="Sign Up" component={Link} to="/signup"></Tab>
+          </Tabs>
         </ul>
 
         {/* Search + Icons */}
