@@ -1,8 +1,9 @@
 import React from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Link } from 'react-router-dom'
-
-
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import { Navigation } from 'swiper/modules';
 
 export const Page = () => {
   
@@ -103,9 +104,16 @@ export const Page = () => {
       </div>
       </div>
       
-      <div className='grid grid-cols-5 gap-5 mt-3'>
+      <div className='mr-20 p-2 mt-3'>
+       <Swiper 
+    navigation={true}
+     modules={[Navigation]} 
+     className="mySwiper"
+     spaceBetween={30}
+     slidesPerView={4}
+     >
    
-    
+     <SwiperSlide>
       <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
         <img src="/Flash Sales/joystick.png" className="mx-auto mb-6" />
         <h3 className="text-lg font-medium mb-2">Joystick</h3>
@@ -117,6 +125,8 @@ export const Page = () => {
           <span className="text-gray-500">(100)</span>
         </div>
       </div>
+      </SwiperSlide>
+      <SwiperSlide>
       <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
         <img src="/Flash Sales/keyboard.png" className="mx-auto mb-6" />
         <h3 className="text-lg font-medium mb-2">Ak-900 Wired Keyboard</h3>
@@ -128,6 +138,8 @@ export const Page = () => {
           <span className="text-gray-500">(125)</span>
         </div>
       </div>
+      </SwiperSlide>
+      <SwiperSlide>
       <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
         <img src="/Flash Sales/monitor.png" className="mx-auto mb-6" />
         <h3 className="text-lg font-medium mb-2">Gaming Monitor</h3>
@@ -139,6 +151,8 @@ export const Page = () => {
           <span className="text-gray-500">(1543)</span>
         </div>
       </div>
+      </SwiperSlide>
+      <SwiperSlide>
       <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
         <img src="/Flash Sales/chair.png" className="mx-auto mb-6" />
         <h3 className="text-lg font-medium mb-2">S-series Comfort Chair</h3>
@@ -150,6 +164,8 @@ export const Page = () => {
           <span className="text-gray-500">(1346)</span>
         </div>
       </div>
+      </SwiperSlide>
+      <SwiperSlide>
       <div className="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
         <img src="/Cart.png" className="mx-auto mb-6" />
         <h3 className="text-lg font-medium mb-2">Asus TUF f15</h3>
@@ -161,14 +177,18 @@ export const Page = () => {
           <span className="text-gray-500">(159)</span>
         </div>
       </div>
+      </SwiperSlide>
+    </Swiper>
+    </div>
       </div>
+     
 
       <div className='text-center mt-12'>
         <button className='bg-red-500 text-white w-60 h-10 rounded-[5px]'>View All Products</button>
       </div>
 
       <hr className='mt-20 w-325 text-gray-300 '></hr>
-    </div>
+    
 
   {/* Browse By Catgory */}
 
@@ -204,6 +224,7 @@ export const Page = () => {
 
 
   {/* Best selling */}
+  
 
     <div className='ml-30 mt-15 mr-30'>
       <div className="flex items-center gap-3 mb-4">
@@ -219,10 +240,18 @@ export const Page = () => {
       </div>
 
 
-       <div className='grid grid-cols-4 gap-5 mt-3'>
+
+
+    <Swiper 
+    navigation={true}
+     modules={[Navigation]} 
+     className="mySwiper"
+     spaceBetween={30}
+     slidesPerView={4}
+     >
 
     
-
+  <SwiperSlide>
       <div className="bg-white  rounded-xl shadow-sm hover:shadow-lg transition">
         <img src="/bestseller/gucci.png" className="mx-auto mb-6" />
         <h3 className="text-lg font-medium mb-2 ml-5">Gucci Bag</h3>
@@ -234,7 +263,9 @@ export const Page = () => {
           <span className="text-gray-500">(123123)</span>
         </div>
       </div>
+  </SwiperSlide>
 
+<SwiperSlide>
       <div className="bg-white  rounded-xl shadow-sm hover:shadow-lg transition">
         <img src="/bestseller/cpucooler.png" className="mx-auto mb-6" />
         <h3 className="text-lg font-medium mb-2 ml-5">RGB CPU cooler</h3>
@@ -246,7 +277,9 @@ export const Page = () => {
           <span className="text-gray-500">(1123)</span>
         </div>
       </div>
+      </SwiperSlide>
 
+  <SwiperSlide>
       <div className="bg-white  rounded-xl shadow-sm hover:shadow-lg transition">
         <img src="/bestseller/bookself.png" className="mx-auto mb-6" />
         <h3 className="text-lg font-medium mb-2 ml-5">Limited Small Book-Self</h3>
@@ -258,7 +291,9 @@ export const Page = () => {
           <span className="text-gray-500">(1220)</span>
         </div>
       </div>
+    </SwiperSlide>
 
+    <SwiperSlide>
       <div className="bg-white  rounded-xl shadow-sm hover:shadow-lg transition">
         <img src="/bestseller/jacket.png" className="mx-auto mb-6" />
         <h3 className="text-lg font-medium mb-2 ml-5">Trekking Jacker</h3>
@@ -270,14 +305,53 @@ export const Page = () => {
           <span className="text-gray-500">(12344)</span>
         </div>
       </div>
+      </SwiperSlide>
 
-      
-
-     
-      
+    <SwiperSlide>
+      <div className="bg-white  rounded-xl shadow-sm hover:shadow-lg transition">
+        <img src="/bestseller/jacket.png" className="mx-auto mb-6" />
+        <h3 className="text-lg font-medium mb-2 ml-5">Trekking Jacker</h3>
+        <div className="flex items-center gap-3 m-5 text-[18px]">
+          <span className="text-red-500 font-semibold">$300</span>
+          <div className="flex text-yellow-400">
+            ★★★☆☆
+          </div>
+          <span className="text-gray-500">(12344)</span>
+        </div>
+      </div>
+      </SwiperSlide>
+    <SwiperSlide>
+      <div className="bg-white  rounded-xl shadow-sm hover:shadow-lg transition">
+        <img src="/bestseller/jacket.png" className="mx-auto mb-6" />
+        <h3 className="text-lg font-medium mb-2 ml-5">Trekking Jacker</h3>
+        <div className="flex items-center gap-3 m-5 text-[18px]">
+          <span className="text-red-500 font-semibold">$300</span>
+          <div className="flex text-yellow-400">
+            ★★★☆☆
+          </div>
+          <span className="text-gray-500">(12344)</span>
+        </div>
+      </div>
+      </SwiperSlide>
+    <SwiperSlide>
+      <div className="bg-white  rounded-xl shadow-sm hover:shadow-lg transition">
+        <img src="/bestseller/jacket.png" className="mx-auto mb-6" />
+        <h3 className="text-lg font-medium mb-2 ml-5">Trekking Jacker</h3>
+        <div className="flex items-center gap-3 m-5 text-[18px]">
+          <span className="text-red-500 font-semibold">$300</span>
+          <div className="flex text-yellow-400">
+            ★★★☆☆
+          </div>
+          <span className="text-gray-500">(12344)</span>
+        </div>
+      </div>
+      </SwiperSlide>
+       </Swiper>      
       </div>
       <hr className='mt-20 w-325 text-gray-300 '></hr>
-    </div>
+
+
+ 
 
 
 

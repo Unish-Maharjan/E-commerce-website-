@@ -14,6 +14,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Cart from './components/Cart.jsx'
 import MenFashion from './components/Menfashion.jsx'
 import Electronics from './components/Electronics.jsx'
+import Login from './components/Login.jsx'
 
 function App() {
   const router = createBrowserRouter([
@@ -40,6 +41,10 @@ function App() {
     {
       path: "/signup",
       element: <><Header/><Signup/><Footer/></>
+    },
+    {
+      path: "/login",
+      element: <><Header/><Login/><Footer/></>
     },
     {
       path: "/wishlist",

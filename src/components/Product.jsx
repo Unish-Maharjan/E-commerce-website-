@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 
 export const Product = () => {
    const [products, setProducts] = useState([]);
+   const [search,setSearch] = useState("");
 
   useEffect(() => {
     fetch("https://dummyjson.com/products")
@@ -10,23 +11,36 @@ export const Product = () => {
   }, []);
 
  
-
+  console.log(search);
   
 
   return (
     <>
    <section className="max-w-7xl mx-auto py-16 px-6">
+
+      
     
-   
+   <div className="flex justify-between">
       <div className="flex items-center gap-3 mb-4">
         <div className="w-2 h-8 bg-red-500 rounded"></div>
         <p className="text-red-500 font-semibold">Our Products</p>
       </div>
 
+      <input
+            type="text"
+            placeholder="Search for your item"
+            className="bg-gray-200 w-100 h-9 px-3 outline-none rounded"
+            onChange={(e) => setSearch(e.target.value)}
+          />
+
+    </div>
+
       
 
-  <div className="grid grid-cols-4 gap-6">
-  {products.map((products) => {
+  <div className="grid grid-cols-4 gap-6 mt-10">
+  {products.filter((items) => {
+      return search.toLowerCase() === '' ? items : items.title.toLowerCase().includes(search);
+  }).map((products) => {
     let number = Math.floor(Math.random() * 100);
 
     return (
