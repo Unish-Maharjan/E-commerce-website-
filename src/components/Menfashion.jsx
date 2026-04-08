@@ -1,129 +1,137 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Addproduct from './Addproduct';
 
 const MenFashion = () => {
          
- const menProduct = [
+ const initialproduct = [
   {
     title: "Classic White Shirt",
     Description: "Crisp white formal shirt for office and occasions",
-    Price: 1800,
+    price: 1800,
     image: "https://images.unsplash.com/photo-1603252109303-2751441dd157?w=400&fit=crop",
   },
   {
     title: "Slim Fit Chinos",
     Description: "Versatile slim fit chinos for smart casual look",
-    Price: 2500,
+    price: 2500,
     image: "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=400&fit=crop",
   },
   {
     title: "Men's Denim Jacket",
     Description: "Rugged denim jacket for a cool casual style",
-    Price: 3400,
+    price: 3400,
     image: "https://images.unsplash.com/photo-1495105787522-5334e3ffa0ef?w=400&fit=crop",
   },
   {
     title: "Slim Fit Suit",
     Description: "Elegant slim fit suit for formal events",
-    Price: 8500,
+    price: 8500,
     image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=400&fit=crop",
   },
   {
     title: "Graphic Tee",
     Description: "Trendy graphic t-shirt for streetwear style",
-    Price: 1200,
+    price: 1200,
     image: "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=400&fit=crop",
   },
   {
     title: "Men's Leather Jacket",
     Description: "Premium leather jacket for a bold statement",
-    Price: 6500,
+    price: 6500,
     image: "https://images.unsplash.com/photo-1520975954732-35dd22299614?w=400&fit=crop",
   },
   {
     title: "Linen Shirt",
     Description: "Breathable linen shirt perfect for summer days",
-    Price: 2000,
+    price: 2000,
     image: "https://images.unsplash.com/photo-1598033129183-c4f50c736f10?w=400&fit=crop",
   },
   {
     title: "Cargo Pants",
     Description: "Functional cargo pants with multiple pockets",
-    Price: 2800,
+    price: 2800,
     image: "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=400&fit=crop",
   },
   {
     title: "Men's Hoodie",
     Description: "Cozy pullover hoodie for relaxed everyday wear",
-    Price: 2600,
+    price: 2600,
     image: "https://images.unsplash.com/photo-1614495640340-02853d943c4f?w=400&fit=crop",
   },
   {
     title: "Polo Shirt",
     Description: "Classic polo shirt for a smart casual look",
-    Price: 1600,
+    price: 1600,
     image: "https://images.unsplash.com/photo-1581655353564-df123a1eb820?w=400&fit=crop",
   },
   {
     title: "Tailored Blazer",
     Description: "Sharp tailored blazer for professional settings",
-    Price: 4800,
+    price: 4800,
     image: "https://images.unsplash.com/photo-1593032465175-481ac7f401a0?w=400&fit=crop",
   },
   {
     title: "Jogger Sweatpants",
     Description: "Comfortable joggers for workouts and lounging",
-    Price: 2100,
+    price: 2100,
     image: "https://images.unsplash.com/photo-1596755389378-c31d21fd1273?w=400&fit=crop",
   },
   {
     title: "Turtleneck Sweater",
     Description: "Stylish turtleneck for a sophisticated winter look",
-    Price: 3000,
+    price: 3000,
     image: "https://images.unsplash.com/photo-1638643391904-9b551ba91eaa?w=400&fit=crop",
   },
   {
     title: "Shorts",
     Description: "Lightweight shorts for casual summer outings",
-    Price: 1400,
+    price: 1400,
     image: "https://images.unsplash.com/photo-1591195853828-11db59a44f43?w=400&fit=crop",
   },
   {
     title: "Bomber Jacket",
     Description: "Trendy bomber jacket for a street-style edge",
-    Price: 3800,
+    price: 3800,
     image: "https://images.unsplash.com/photo-1611312449408-fcece27cdbb7?w=400&fit=crop",
   },
   {
     title: "Dress Trousers",
     Description: "Classic dress trousers for formal occasions",
-    Price: 3200,
+    price: 3200,
     image: "https://images.unsplash.com/photo-1540518614846-7eded433c457?w=400&fit=crop",
   },
   {
     title: "Flannel Shirt",
     Description: "Warm flannel shirt for a cozy autumn vibe",
-    Price: 2200,
+    price: 2200,
     image: "https://images.unsplash.com/photo-1589310243389-96a5483213a8?w=400&fit=crop",
   },
   {
     title: "Tank Top",
     Description: "Essential tank top for gym or casual wear",
-    Price: 900,
+    price: 900,
     image: "https://images.unsplash.com/photo-1571945153237-4929e783af4a?w=400&fit=crop",
   },
   {
     title: "Trench Coat",
     Description: "Sophisticated trench coat for a timeless look",
-    Price: 7200,
+    price: 7200,
     image: "https://images.unsplash.com/photo-1520012218364-3dbe62c99bee?w=400&fit=crop",
   },
   {
     title: "Knit Cardigan",
     Description: "Relaxed knit cardigan for layering in cool weather",
-    Price: 2900,
+    price: 2900,
     image: "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=400&fit=crop",
   },
 ];
+
+const [product, setProduct] = useState(initialproduct);
+
+  const newdata = (setProd) => {
+    const updated = [setProd, ...product]
+    setProduct(updated);
+  }
 
   return (
     <section className="max-w-7xl mx-auto py-16 px-6">
@@ -137,7 +145,7 @@ const MenFashion = () => {
 
   <div className="grid grid-cols-4 gap-6">
  
- {menProduct.map((data, index)=>{
+ {product.map((data, index)=>{
       let number = Math.floor(Math.random() * 100);
 
       return(
@@ -168,7 +176,7 @@ const MenFashion = () => {
 
           <div className="mt-3 flex items-center justify-between">
             <span className="text-lg font-semibold text-red-500">
-              {data.Price}
+              {data.price}
             </span>
 
             <button className="text-sm bg-red-500 text-white px-3 py-1 rounded-lg hover:bg-gray-800 transition">
@@ -184,6 +192,8 @@ const MenFashion = () => {
 })}
 
   </div>
+
+  <Addproduct addproduct={newdata}/>
  
 
 

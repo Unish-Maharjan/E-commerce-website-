@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Addproduct from "./Addproduct";
 
 export const Product = () => {
    const [products, setProducts] = useState([]);
@@ -9,6 +10,11 @@ export const Product = () => {
       .then(res => res.json())
       .then(data => setProducts(data.products));
   }, []);
+
+  const newdata = (setProd) => {
+    const updated = [setProd, ...products]
+    setProducts(updated);
+  }
 
  
   console.log(search);
@@ -39,7 +45,7 @@ export const Product = () => {
 
   <div className="grid grid-cols-4 gap-6 mt-10">
   {products.filter((items) => {
-      return search.toLowerCase() === '' ? items : items.title.toLowerCase().includes(search);
+      return search.toLowerCase() === '' ? items : items.title.toLowerCase().includes(search.toLowerCase())
   }).map((products) => {
     let number = Math.floor(Math.random() * 100);
 
@@ -84,6 +90,8 @@ export const Product = () => {
     );
   })}
   </div>
+
+  <Addproduct addproduct = {newdata}/>
 
 
   </section>
