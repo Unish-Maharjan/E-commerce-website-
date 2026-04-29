@@ -27,7 +27,7 @@ export const Page = () => {
             <Link to="/electronics" className="flex justify-between items-center hover:text-black cursor-pointer font-semibold">
               Electronics <span className='text-xl'>›</span>
             </Link>
-            <Link to="/womenfashion" className="flex justify-between items-center hover:text-black cursor-pointer font-semibold">
+            <Link to="/lifestyle" className="flex justify-between items-center hover:text-black cursor-pointer font-semibold">
               Home & Lifestyle <span className='text-xl'>›</span>
             </Link>
             <Link to="/womenfashion" className="flex justify-between items-center hover:text-black cursor-pointer font-semibold">

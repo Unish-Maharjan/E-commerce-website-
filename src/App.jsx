@@ -15,6 +15,7 @@ import Cart from './components/Cart.jsx'
 import MenFashion from './components/Menfashion.jsx'
 import Electronics from './components/Electronics.jsx'
 import Login from './components/Login.jsx'
+import Homelifestyle from './components/Homelifestyle.jsx'
 
 function App() {
   const router = createBrowserRouter([
@@ -65,6 +66,10 @@ function App() {
     {
       path: "/cart",
       element: <><Header/><Cart/><Footer/></>
+    },
+    {
+      path: "/lifestyle",
+      element: <><Header/><Homelifestyle/><Footer/></>
     },
     
   ]);

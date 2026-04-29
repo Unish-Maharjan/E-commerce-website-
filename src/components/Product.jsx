@@ -1,15 +1,11 @@
 import React, { useEffect, useState } from "react";
 import Addproduct from "./Addproduct";
+import { useGetProductQuery } from "../services/productApi";
 
 export const Product = () => {
    const [products, setProducts] = useState([]);
    const [search,setSearch] = useState("");
 
-  useEffect(() => {
-    fetch("https://dummyjson.com/products")
-      .then(res => res.json())
-      .then(data => setProducts(data.products));
-  }, []);
 
   const newdata = (setProd) => {
     const updated = [setProd, ...products]
@@ -18,6 +14,11 @@ export const Product = () => {
 
  
   console.log(search);
+  
+
+  const {data} = useGetProductQuery();
+
+ 
   
 
   return (
@@ -44,21 +45,21 @@ export const Product = () => {
       
 
   <div className="grid grid-cols-4 gap-6 mt-10">
-  {products.filter((items) => {
+  {data?.products?.filter((items) => {
       return search.toLowerCase() === '' ? items : items.title.toLowerCase().includes(search.toLowerCase())
-  }).map((products) => {
+  }).map((product) => {
     let number = Math.floor(Math.random() * 100);
 
     return (
       <div
-        key={products.id}
+        key={product.id}
         className="bg-white rounded-xl shadow-sm hover:shadow-md transition overflow-hidden"
       >
         {/* Image */}
         <div className="h-48 flex items-center justify-center bg-gray-50 p-4">
           <img
-            src={products.thumbnail}
-            alt={products.title}
+            src={product.thumbnail}
+            alt={product.title}
             className="max-h-full object-contain transition-transform duration-300 hover:scale-105"
           />
         </div>
@@ -66,7 +67,7 @@ export const Product = () => {
         {/* Content */}
         <div className="p-4 flex flex-col justify-between h-40">
           <h3 className="text-[16px] font-medium text-gray-800 line-clamp-2">
-            {products.title}
+            {product.title}
           </h3>
 
           <div className="flex items-center gap-2 text-sm mt-2">
@@ -78,7 +79,7 @@ export const Product = () => {
 
           <div className="mt-3 flex items-center justify-between">
             <span className="text-lg font-semibold text-red-500">
-              ${products.price}
+              ${product.price}
             </span>
 
             <button className="text-sm bg-red-500 text-white px-3 py-1 rounded-lg hover:bg-gray-800 transition">
