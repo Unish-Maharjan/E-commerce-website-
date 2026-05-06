@@ -116,13 +116,7 @@ const Electronics = () => {
     Description: "Compact foldable drone with 4K HDR video and obstacle sensing",
     Price: 89000,
     image: "https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=400&fit=crop",
-  },
-  {
-    title: "USB-C Hub 10-in-1",
-    Description: "Multi-port hub with HDMI, USB, SD card and ethernet ports",
-    Price: 3499,
-    image: "https://images.unsplash.com/photo-1625842268584-8f3296236761?w=400&fit=crop",
-  },
+  }
 ];
 
   return (

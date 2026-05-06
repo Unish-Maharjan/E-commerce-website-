@@ -118,12 +118,6 @@ const MenFashion = () => {
     price: 7200,
     image: "https://images.unsplash.com/photo-1520012218364-3dbe62c99bee?w=400&fit=crop",
   },
-  {
-    title: "Knit Cardigan",
-    Description: "Relaxed knit cardigan for layering in cool weather",
-    price: 2900,
-    image: "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=400&fit=crop",
-  },
 ];
 
 const [product, setProduct] = useState(initialproduct);
